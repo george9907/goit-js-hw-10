@@ -25,11 +25,12 @@ const options = {
       iziToast.error({
         color: 'red',
         position: 'topRight',
-        message: `Please choose a date in the future`,
+        message: `Error Illegal operation`,
       });
     } else {
-      startBtn.disabled = false;
-      inputTime.disabled = true;
+        startBtn.disabled = false;
+        inputTime.disabled = true;
+        startBtn.classList.add(`btn-active`);
     }
   },
 };
@@ -60,17 +61,26 @@ console.log(showTime);
 startBtn.disabled = true;
 
 startBtn.addEventListener('click', event => {
-  const repeatTime = setInterval(() => {
+  const intervalId = setInterval(() => {
     timeInterval = userDate - new Date();
     event.preventDefault();
     inputTime.disabled = true;
+    startBtn.classList.remove(`btn-active`);
+
 
     if (timeInterval < 1) {
       startBtn.disabled = true;
       inputTime.disabled = false;
-      clearInterval(repeatTime);
+      clearInterval(intervalId);
       return;
     }
+      
+      
+      
+  
+ 
+    
+      
 
     const timer = convertMs(timeInterval);
 
