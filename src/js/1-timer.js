@@ -17,7 +17,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    // console.log(selectedDates[0]);
+    console.log(selectedDates[0]);
     userDate = selectedDates[0];
     timeInterval = userDate - options.defaultDate;
 
@@ -76,12 +76,6 @@ startBtn.addEventListener('click', event => {
     }
       
       
-      
-  
- 
-    
-      
-
     const timer = convertMs(timeInterval);
 
     showTime[0].innerText = timer.days.toString().padStart(2, '0');
