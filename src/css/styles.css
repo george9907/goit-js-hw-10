@@ -92,6 +92,10 @@
   color: #fff;
 }
 
+.toast{
+  color: #fff;
+}
+
 .btn-active:hover,
 .btn-active:focus {
   background: #6c8cff;

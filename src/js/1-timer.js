@@ -25,7 +25,7 @@ const options = {
       iziToast.error({
         color: 'red',
         position: 'topRight',
-        icon: `icon-error`,
+        color: `white`,
         title: `Error`,
         message: `Illegal operation`,
       });
@@ -33,6 +33,7 @@ const options = {
         startBtn.disabled = false;
         inputTime.disabled = true;
         startBtn.classList.add(`btn-active`);
+        iziToast.classList.add(`toast`);
     }
   },
 };
