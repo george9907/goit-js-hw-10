@@ -27,12 +27,13 @@ const options = {
         position: 'topRight',
         title: `Error`,
         message: `Illegal operation`,
+        titleColor: 'white',
+        messageColor: 'white',
       });
     } else {
         startBtn.disabled = false;
         inputTime.disabled = true;
         startBtn.classList.add(`btn-active`);
-        timeInterval.classList.add(`toast`);
     }
   },
 };
