@@ -28,7 +28,8 @@ const options = {
         title: `Error`,
         message: `Illegal operation`,
         titleColor: 'white',
-        messageColor: 'white',
+          messageColor: 'white',
+        iconColor: `white`,
       });
     } else {
         startBtn.disabled = false;
