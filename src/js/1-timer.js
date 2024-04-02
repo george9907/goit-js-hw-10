@@ -23,14 +23,15 @@ const options = {
 
     if (timeInterval < 1) {
       iziToast.error({
-        color: 'darkred',
+        color: 'red',
         position: 'topRight',
         title: `Error`,
         message: `Illegal operation`,
         titleColor: 'white',
         messageColor: 'white',
+        icon: 'ico-error',
         iconColor: `white`,
-        icon: `error`,
+        
       });
     } else {
         startBtn.disabled = false;
