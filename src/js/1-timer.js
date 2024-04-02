@@ -30,7 +30,6 @@ const options = {
         titleColor: 'white',
         messageColor: 'white',
         icon: 'ico-error',
-        iconColor: `white`,
         
       });
     } else {
