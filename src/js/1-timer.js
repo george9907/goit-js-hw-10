@@ -33,7 +33,7 @@ const options = {
         startBtn.disabled = false;
         inputTime.disabled = true;
         startBtn.classList.add(`btn-active`);
-        iziToast.classList.add(`toast`);
+        timeInterval.classList.add(`toast`);
     }
   },
 };
