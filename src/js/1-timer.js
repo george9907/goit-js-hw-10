@@ -25,7 +25,6 @@ const options = {
       iziToast.error({
         color: 'red',
         position: 'topRight',
-        color: `white`,
         title: `Error`,
         message: `Illegal operation`,
       });
