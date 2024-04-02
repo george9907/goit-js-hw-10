@@ -25,7 +25,9 @@ const options = {
       iziToast.error({
         color: 'red',
         position: 'topRight',
-        message: `Error Illegal operation`,
+        icon: `icon-error`,
+        title: `Error`,
+        message: `Illegal operation`,
       });
     } else {
         startBtn.disabled = false;
