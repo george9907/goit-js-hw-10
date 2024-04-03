@@ -25,12 +25,9 @@ const options = {
       iziToast.error({
         color: 'red',
         position: 'topRight',
-        title: `Error`,
-        message: `Illegal operation`,
-        titleColor: 'white',
+        message: `Please choose a date in the future`,
         messageColor: 'white',
         icon: 'ico-error',
-        
       });
     } else {
         startBtn.disabled = false;
